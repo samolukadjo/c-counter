@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.title {
+    color: green;
+    font-size: 2rem;
+}
+
+.item {
+    margin: 1rem;
+}
+
+.page {
+    display: flex;
+    flex-direction: column
+}
+
+.button {
+    height: 3rem;
+    font-size: 1.2rem;
+    background-color: green;
+    border: none;
+    border-radius: 0.8rem;
+    color: white;
+}
+
+.text-input {
+    border-radius: 0.8rem;
+    background-color: darkslategrey;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.result {
+    color: white;
+}
