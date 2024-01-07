@@ -21,9 +21,7 @@ body {
 .page {
     display: flex;
     flex-direction: column;
-    /* height: 100dvh; */
-    margin: none;
-    border: none none;
+    height: 100dvh;
 }
 
 .button {
