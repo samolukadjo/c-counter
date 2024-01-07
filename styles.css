@@ -39,6 +39,7 @@ body {
     border: none;
     color: white;
     font-size: 0.8rem;
+    min-height: 30dvh;
 }
 
 .result {
