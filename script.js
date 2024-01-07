@@ -40,10 +40,3 @@ function generateResult(numC, totalChar) {
 
     return resultText;
 }
-
-function copyC() {
-    result.select();
-    result.setSelectionRange(0, 99999); // For mobile devices
-
-    // Copy the text
-}
