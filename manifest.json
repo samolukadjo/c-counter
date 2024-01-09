@@ -1,0 +1,12 @@
+{
+    "manifest_version": 1,
+    "version": "1.0",
+    "name": "C counter",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon-192.png"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
