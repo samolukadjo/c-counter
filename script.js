@@ -1,4 +1,9 @@
-let result = document.getElementById("result");
+const result = document.getElementById("result");
+const countBtn = document.getElementById("count-button");
+
+countBtn.addEventListener("click", function(){
+    countC()
+});
 
 function countC() {
     console.log("Starting count");
