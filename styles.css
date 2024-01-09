@@ -28,7 +28,7 @@ body {
 
 .button {
     height: 3rem;
-    min-height: 30px;
+    min-height: 40px;
     font-size: 1.2rem;
     background-color: green;
     border: none;
