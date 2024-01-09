@@ -33,15 +33,7 @@ function generateResult(numC, totalChar) {
     }
 
     let resultText =
-        "There are " +
-        numC +
-        " occurences of C in this post that consists of " +
-        totalChar +
-        " characters in total. That's " +
-        cPercent +
-        "% C, which is " +
-        cCompare +
-        " the 2.8% C average.";
+        `There are ${numC} occurrences of C in this post that consists of ${totalChar} characters in total. That's ${cPercent}% C, which is ${cCompare} the 2.8% C average.`;
 
     return resultText;
 }
