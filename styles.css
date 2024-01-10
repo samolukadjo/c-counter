@@ -1,6 +1,7 @@
 * {
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 body {
@@ -12,8 +13,13 @@ body {
 }
 
 .title {
-    color: green;
+    /* color: rgb(103,58,183); */
+    background: -webkit-linear-gradient(300deg, rgb(112, 64, 195) 14%, rgb(36, 182, 249) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 2rem;
+    display: inline-block;
 }
 
 .item {
@@ -30,23 +36,21 @@ body {
     height: 3rem;
     min-height: 40px;
     font-size: 1.2rem;
-    background-color: green;
+    background: rgb(103,58,183);
+    background: linear-gradient(135deg, rgba(103,58,183,1) 14%, rgba(3,169,244,1) 100%);
     border: none;
     border-radius: 0.8rem;
-    color: white;
 }
 
 .text-input {
     border-radius: 0.8rem;
-    background-color: darkslategrey;
+    background: linear-gradient(135deg, rgba(104, 58, 183, 0.253) 14%, rgba(3, 168, 244, 0.257) 100%);
     border: none;
-    color: white;
     font-size: 0.9em;
     min-height: 30dvh;
 }
 
 .result {
-    color: white;
     font-size: 1.2rem;
     padding-bottom: 1em;
 }
