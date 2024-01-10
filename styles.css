@@ -47,7 +47,7 @@ body {
     background: linear-gradient(135deg, rgba(104, 58, 183, 0.253) 14%, rgba(3, 168, 244, 0.257) 100%);
     border: none;
     font-size: 0.9em;
-    min-height: 10rem;
+    min-height: 11rem;
 }
 
 .result {
