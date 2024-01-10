@@ -8,5 +8,11 @@
     },
     "permissions": [
         "clipboardWrite"
-    ]
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "c-counter@lukadjo.t.me",
+          "strict_min_version": "42.0"
+        }
+      }      
 }
