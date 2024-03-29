@@ -1,13 +1,25 @@
 const result = document.getElementById("result");
 const countBtn = document.getElementById("count-button");
+const txtInput = document.getElementById("text-input");
 
 countBtn.addEventListener("click", function(){
     countC()
 });
+txtInput.addEventListener("input", function(){
+    console.log("Input detected");
+    localStorage.setItem("text-content", txtInput.value);
+});
+
+restoreText();
+
+function restoreText() {
+    const text = localStorage.getItem("text-content");
+    txtInput.value = text
+}
 
 function countC() {
     console.log("Starting count");
-    let inputText = document.getElementById("text-input").value;
+    let inputText = txtInput.value;
     console.log(inputText);
     console.log(result);
     let numC = (inputText.match(/c/g) || []).length;

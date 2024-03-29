@@ -9,7 +9,7 @@ body {
     color: white;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    min-width: 450px;
+    min-width: 400px;
     min-height: 500px;
 }
 
@@ -45,7 +45,7 @@ body {
 
 .text-input {
     border-radius: 0.8rem;
-    background: linear-gradient(135deg, rgba(104, 58, 183, 0.253) 14%, rgba(3, 168, 244, 0.257) 100%);
+    background: linear-gradient(135deg, rgba(104, 58, 183, 0.257) 14%, rgba(3, 168, 244, 0.257) 100%);
 /*
     border-image: linear-gradient(135deg, rgba(104, 58, 183) 14%, rgba(3, 168, 244) 100%);
     border-style: solid;
