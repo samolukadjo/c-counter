@@ -1,9 +1,14 @@
 const result = document.getElementById("result");
 const countBtn = document.getElementById("count-button");
+const xBtn = document.getElementById("x-button");
 const txtInput = document.getElementById("text-input");
 
 countBtn.addEventListener("click", function(){
     countC()
+});
+xBtn.addEventListener("click", function(){
+    txtInput.value = ""
+    localStorage.setItem("text-content", "");
 });
 txtInput.addEventListener("input", function(){
     console.log("Input detected");

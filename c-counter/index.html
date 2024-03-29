@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>C Counter</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    </head>
-    <body>
-        <div class="page">
-            <div>
-                <h1 class="title item">C Counter</h1>
-            </div>
-            <textarea
-                rows="11"
-                cols="50"
-                id="text-input"
-                class="text-input item"></textarea>
-            <button class="item button" id="count-button">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C Counter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+    <div class="page">
+        <div>
+            <h1 class="title item">C Counter</h1>
+        </div>
+        <textarea rows="11" cols="50" id="text-input" class="text-input item"></textarea>
+        <div class="item">
+            <button class="button button-count" id="count-button">
                 Count
             </button>
-            <div id="result" class="result item">Input some text and click
-                Count!</div>
+            <button class="button button-x" id="x-button">
+                X
+            </button>
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div id="result" class="result item">Input some text and click
+            Count!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>

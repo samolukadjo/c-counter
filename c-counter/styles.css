@@ -10,7 +10,7 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     min-width: 400px;
-    min-height: 500px;
+    min-height: 570px;
 }
 
 .title {
@@ -41,6 +41,17 @@ body {
     background: linear-gradient(135deg, rgba(103,58,183,1) 14%, rgba(3,169,244,1) 100%);
     border: none;
     border-radius: 0.8rem;
+}
+
+.button-count {
+    width: 80%;
+    margin-right: 3%;
+}
+
+.button-x {
+    width: 15%;
+    background: rgb(183, 58, 58);
+    background: linear-gradient(135deg, rgba(183, 58, 58,1) 14%, rgb(91, 31, 31) 100%);
 }
 
 .text-input {
