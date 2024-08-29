@@ -1,43 +1,49 @@
-const result = document.getElementById("result");
+const resultLabel = document.getElementById("result");
 const countBtn = document.getElementById("count-button");
 const xBtn = document.getElementById("x-button");
 const txtInput = document.getElementById("text-input");
 
+
+// Event Listeners for buttons and text input autosave
 countBtn.addEventListener("click", function(){
-    countC()
+    countStringInString(txtInput.value, "C");
 });
 xBtn.addEventListener("click", function(){
+    // The X button should clear the text input
     txtInput.value = ""
-    localStorage.setItem("text-content", "");
+    setSavedText("");
 });
 txtInput.addEventListener("input", function(){
     console.log("Input detected");
-    localStorage.setItem("text-content", txtInput.value);
+    setSavedText(txtInput.value);
 });
 
-restoreText();
+// Initial load functions here
+restoreSavedText();
 
-function restoreText() {
+// Functions to save and restore text from local storage
+function restoreSavedText() {
     const text = localStorage.getItem("text-content");
     txtInput.value = text
 }
-
-function countC() {
-    console.log("Starting count");
-    let inputText = txtInput.value;
-    console.log(inputText);
-    console.log(result);
-    let numC = (inputText.match(/c/g) || []).length;
-    numC += (inputText.match(/C/g) || []).length;
-    console.log(numC);
-    let totalChar = inputText.length;
-    let generated = generateResult(numC, totalChar);
-
-    result.textContent = generated;
-    navigator.clipboard.writeText(generated);
+function setSavedText(text) {
+    localStorage.setItem("text-content", text);
 }
 
-function generateResult(numC, totalChar) {
+// Core functionality here
+function countStringInString(string, stringToCount) {
+    console.log(`Counting the number of times "${stringToCount}" appears in "${string}"...`);
+    let numOfStringToCount = (string.match(/c/g) || []).length;
+    numOfStringToCount += (string.match(/C/g) || []).length;
+    console.log("The total is:", numOfStringToCount);
+    const totalChar = string.length;
+    const generatedResult = generateResultText(numOfStringToCount, totalChar);
+
+    resultLabel.textContent = generatedResult;
+    navigator.clipboard.writeText(generatedResult);
+}
+
+function generateResultText(numC, totalChar) {
     let cPercent = (numC / totalChar) * 100;
     let cCompare;
 
