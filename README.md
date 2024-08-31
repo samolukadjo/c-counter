@@ -1,6 +1,6 @@
-# C Counter
-
 A Firefox extension designed to solve a very specific problem.
+
+For a web deployment visit [https://samolukadjo.github.io/c-counter/c-counter/](https://samolukadjo.github.io/c-counter/c-counter/)
 
 ---
 
