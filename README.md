@@ -1,6 +1,6 @@
 A Firefox extension designed to solve a very specific problem.
 
-You can [install the extension here](https://addons.mozilla.org/en-US/firefox/addon/c-counter/).
+You can [install the extension on firefox here](https://addons.mozilla.org/en-US/firefox/addon/c-counter/).
 
 Alternativly you can install it into your browser (firefox or not) from [the file here](https://github.com/samolukadjo/c-counter/releases/latest). Just download the .crx and find your browsers instructions on how to install extensions from files.
 
